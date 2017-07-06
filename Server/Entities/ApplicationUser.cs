@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace SfAttendance.Server.Entities
 {
@@ -17,6 +18,11 @@ namespace SfAttendance.Server.Entities
         public string LastName { get; set; }
         [NotMapped]
         public string Name => this.FirstName + " " + this.LastName;
+
+        /// <summary>
+        /// ‹Î–±‹L˜^
+        /// </summary>
+        public ICollection<WorkRecord> WorkRecords { get; set; }
 
     }
 }
