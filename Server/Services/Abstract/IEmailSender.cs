@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace AspNetCoreSpa.Server.Services.Abstract
+namespace SfAttendance.Server.Services.Abstract
 {
     public interface IEmailSender
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace AspNetCoreSpa.Server.Filters
+namespace SfAttendance.Server.Filters
 {
 
     public class ApiException : Exception

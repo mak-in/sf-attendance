@@ -1,16 +1,16 @@
 using System.Linq;
 using System.Threading.Tasks;
-using AspNetCoreSpa.Server.Entities;
-using AspNetCoreSpa.Server.Extensions;
-using AspNetCoreSpa.Server.Services.Abstract;
-using AspNetCoreSpa.Server.ViewModels.AccountViewModels;
+using SfAttendance.Server.Entities;
+using SfAttendance.Server.Extensions;
+using SfAttendance.Server.Services.Abstract;
+using SfAttendance.Server.ViewModels.AccountViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 
-namespace AspNetCoreSpa.Server.Controllers.api
+namespace SfAttendance.Server.Controllers.api
 {
     [Authorize]
     [Route("api/[controller]")]

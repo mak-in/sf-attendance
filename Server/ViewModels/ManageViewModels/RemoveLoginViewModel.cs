@@ -1,4 +1,4 @@
-namespace AspNetCoreSpa.Server.ViewModels.ManageViewModels
+namespace SfAttendance.Server.ViewModels.ManageViewModels
 {
     public class RemoveLoginViewModel
     {

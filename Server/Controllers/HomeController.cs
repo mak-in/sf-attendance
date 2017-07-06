@@ -2,12 +2,12 @@
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AspNetCoreSpa.Server.Entities;
+using SfAttendance.Server.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCoreSpa.Server.Controllers
+namespace SfAttendance.Server.Controllers
 {
     public class HomeController : Controller
     {

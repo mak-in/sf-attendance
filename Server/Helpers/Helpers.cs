@@ -4,7 +4,7 @@ using Serilog;
 using Serilog.Events;
 using static Microsoft.AspNetCore.ResponseCompression.ResponseCompressionDefaults;
 
-namespace AspNetCoreSpa.Server
+namespace SfAttendance.Server
 {
     public static class Helpers
     {

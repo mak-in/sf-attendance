@@ -1,5 +1,5 @@
 
-namespace AspNetCoreSpa.Server.Filters
+namespace SfAttendance.Server.Filters
 {
 
 	/// <summary>

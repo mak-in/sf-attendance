@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using AspNetCoreSpa.Server;
-using AspNetCoreSpa.Server.Extensions;
+using SfAttendance.Server;
+using SfAttendance.Server.Extensions;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace AspNetCoreSpa
+namespace SfAttendance
 {
     public class Startup
     {

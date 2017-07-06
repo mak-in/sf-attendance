@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AspNetCoreSpa.Migrations
+namespace SfAttendance.Migrations
 {
     public partial class Initial : Migration
     {

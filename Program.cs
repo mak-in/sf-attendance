@@ -1,9 +1,9 @@
 ﻿using System.IO;
-using AspNetCoreSpa.Server;
+using SfAttendance.Server;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
-namespace AspNetCoreSpa
+namespace SfAttendance
 {
     public class Program
     {

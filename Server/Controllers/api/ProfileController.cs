@@ -1,14 +1,14 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using AspNetCoreSpa.Server.Entities;
-using AspNetCoreSpa.Server.Extensions;
-using AspNetCoreSpa.Server.ViewModels;
+using SfAttendance.Server.Entities;
+using SfAttendance.Server.Extensions;
+using SfAttendance.Server.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AspNetCoreSpa.Server.Controllers.api
+namespace SfAttendance.Server.Controllers.api
 {
     [Route("api/[controller]")]
     public class ProfileController : BaseController

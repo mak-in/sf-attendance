@@ -1,5 +1,5 @@
 
-namespace AspNetCoreSpa.Server
+namespace SfAttendance.Server
 {
     public static class GlobalText
     {

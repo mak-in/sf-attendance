@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
-using AspNetCoreSpa.Server.Services.Abstract;
+using SfAttendance.Server.Services.Abstract;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Logging;
 using MimeKit;
 
-namespace AspNetCoreSpa.Server.Services
+namespace SfAttendance.Server.Services
 {
     public class EmailSender : IEmailSender
     {

@@ -1,5 +1,5 @@
 {
-  "name": "aspnetnetcore",
+  "name": "sf-attendance",
   "version": "0.0.0",
   "private": true,
   "keywords": [
@@ -10,8 +10,8 @@
     "typescript2",
     "bootstrap4"
   ],
-  "repository": "git+https://github.com/asadsahi/AspNetCoreSpa.git",
-  "author": "Asad Sahi <asadazmat@gmail.com>",
+  "repository": "git+https://github.com/mak-in/sf-attendance.git",
+  "author": "Makino Yusuke <mak_in@teretere.info>",
   "scripts": {
     "rimraf": "rimraf",
     "tslint": "tslint",

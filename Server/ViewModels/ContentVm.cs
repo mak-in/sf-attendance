@@ -1,4 +1,4 @@
-namespace AspNetCoreSpa.Server.ViewModels
+namespace SfAttendance.Server.ViewModels
 {
     public class ContentVm
     {

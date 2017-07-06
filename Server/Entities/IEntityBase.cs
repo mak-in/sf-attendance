@@ -1,4 +1,4 @@
-﻿namespace AspNetCoreSpa.Server.Entities
+﻿namespace SfAttendance.Server.Entities
 {
     public interface IEntityBase
     {

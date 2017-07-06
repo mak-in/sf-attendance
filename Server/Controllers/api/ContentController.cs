@@ -1,10 +1,10 @@
 using System.Linq;
-using AspNetCoreSpa.Server.ViewModels;
+using SfAttendance.Server.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetCoreSpa.Server.Controllers.api
+namespace SfAttendance.Server.Controllers.api
 {
     [Route("api/[controller]")]
     [AllowAnonymous]

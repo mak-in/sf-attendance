@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Security.Cryptography.X509Certificates;
-using AspNetCoreSpa.Server.Entities;
-using AspNetCoreSpa.Server.Filters;
-using AspNetCoreSpa.Server.Services;
-using AspNetCoreSpa.Server.Services.Abstract;
+using SfAttendance.Server.Entities;
+using SfAttendance.Server.Filters;
+using SfAttendance.Server.Services;
+using SfAttendance.Server.Services.Abstract;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel;
 using Microsoft.Extensions.Configuration;
@@ -15,7 +15,7 @@ using System.Net;
 using System.Threading.Tasks;
 using AspNet.Security.OpenIdConnect.Primitives;
 
-namespace AspNetCoreSpa.Server.Extensions
+namespace SfAttendance.Server.Extensions
 {
     public static class ServiceCollectionExtensions
     {

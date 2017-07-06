@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AspNetCoreSpa.Server.ViewModels
+namespace SfAttendance.Server.ViewModels
 {
     public class ChangePasswordVm
     {
