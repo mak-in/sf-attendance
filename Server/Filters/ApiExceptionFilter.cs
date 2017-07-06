@@ -23,9 +23,10 @@ namespace SfAttendance.Server.Filters
                 // handle explicit 'known' API errors
                 var ex = context.Exception as ApiException;
                 context.Exception = null;
-                apiError = new ApiError(ex.Message);
-                apiError.errors = ex.Errors;
-
+                apiError = new ApiError(ex.Message)
+                {
+                    errors = ex.Errors
+                };
                 context.HttpContext.Response.StatusCode = ex.StatusCode;
 
                 _Logger.LogWarning($"Application thrown error: {ex.Message}", ex);
@@ -47,9 +48,10 @@ namespace SfAttendance.Server.Filters
                 string stack = context.Exception.StackTrace;
 #endif
 
-                apiError = new ApiError(msg);
-                apiError.detail = stack;
-
+                apiError = new ApiError(msg)
+                {
+                    detail = stack
+                };
                 context.HttpContext.Response.StatusCode = 500;
 
                 // handle logging here

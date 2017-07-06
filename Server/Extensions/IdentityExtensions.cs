@@ -8,7 +8,9 @@ namespace SfAttendance.Server.Extensions
         public static int GetUserId(this ClaimsPrincipal principal)
         {
             if (principal == null)
+            {
                 throw new ArgumentNullException(nameof(principal));
+            }
 
             var id = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 

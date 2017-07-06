@@ -54,7 +54,9 @@ namespace SfAttendance.Server.Filters
         public void Remove(int Index)
         {
             if (Index > Count - 1 || Index < 0)
+            {
                 RemoveAt(Index);
+            }
         }
 
         /// <summary>
@@ -79,7 +81,9 @@ namespace SfAttendance.Server.Filters
         public bool Assert(bool Condition, string Message, string FieldName = null, string ID = null)
         {
             if (Condition)
+            {
                 Add(Message, FieldName, ID);
+            }
 
             return Condition;
         }
@@ -98,7 +102,9 @@ namespace SfAttendance.Server.Filters
         public bool Assert(bool Condition, ValidationError Error)
         {
             if (Condition)
+            {
                 Add(Error);
+            }
 
             return Condition;
         }
@@ -111,8 +117,14 @@ namespace SfAttendance.Server.Filters
         /// <returns></returns>
         public override string ToString()
         {
+
+
+
+
             if (Count < 1)
+            {
                 return "";
+            }
 
             StringBuilder sb = new StringBuilder(128);
 
@@ -132,7 +144,9 @@ namespace SfAttendance.Server.Filters
         public string ToHtml()
         {
             if (Count < 1)
+            {
                 return "";
+            }
 
             StringBuilder sb = new StringBuilder(256);
             sb.Append("<ul>\r\n");
@@ -141,11 +155,15 @@ namespace SfAttendance.Server.Filters
             {
                 sb.Append("<li>");
                 if (Error.ControlID != null && Error.ControlID != "")
+                {
                     sb.AppendFormat("<a href='#' onclick=\"_errorLinkClick('{0}');return false;\" " +
                                   "style='text-decoration:none'>{1}</a>",
                                   Error.ControlID.Replace(".", "_"), Error.Message);
+                }
                 else
+                {
                     sb.Append(Error.Message);
+                }
 
                 sb.AppendLine("</li>");
             }

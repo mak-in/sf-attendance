@@ -16,13 +16,7 @@ namespace SfAttendance.Server.Entities
         [StringLength(250)]
         public string LastName { get; set; }
         [NotMapped]
-        public string Name
-        {
-            get
-            {
-                return this.FirstName + " " + this.LastName;
-            }
-        }
+        public string Name => this.FirstName + " " + this.LastName;
 
     }
 }
