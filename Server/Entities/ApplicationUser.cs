@@ -22,7 +22,7 @@ namespace SfAttendance.Server.Entities
         /// <summary>
         /// ‹Î–±‹L˜^
         /// </summary>
-        public ICollection<WorkRecord> WorkRecords { get; set; }
+        public ICollection<WorkingRecord> WorkRecords { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@ namespace SfAttendance.Server
         public DbSet<Content> Content { get; set; }
         public DbSet<ContentText> ContentText { get; set; }
 
-        public DbSet<WorkRecord> WorkRecords { get; set; }
+        public DbSet<WorkingRecord> WorkRecords { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
@@ -24,7 +24,7 @@ namespace SfAttendance.Server
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
 
-            modelBuilder.Entity<WorkRecord>(entity =>
+            modelBuilder.Entity<WorkingRecord>(entity =>
             {
                 entity.HasOne(w => w.User)
                 .WithMany(u => u.WorkRecords)

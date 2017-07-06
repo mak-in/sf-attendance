@@ -9,7 +9,7 @@ namespace SfAttendance.Server.Entities
     /// <summary>
     /// 勤務記録
     /// </summary>
-    public class WorkRecord : IEntityBase
+    public class WorkingRecord : IEntityBase
     {
         /// <summary>
         /// 勤務記録ID
